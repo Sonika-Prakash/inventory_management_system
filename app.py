@@ -1,8 +1,6 @@
 from flask import Flask, render_template, session, request, redirect, url_for
 from flask_mysqldb import MySQL
 import MySQLdb.cursors
-from sendgrid import SendGridAPIClient
-from sendgrid.helpers.mail import Mail
 
 app = Flask(__name__)
 app.config['MYSQL_HOST'] = 'remotemysql.com'
